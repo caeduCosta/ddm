@@ -20,7 +20,9 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": ["android.permission.RECORD_AUDIO"]
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,7 +38,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "7b0fbd06-aae7-499a-9f53-eff07958cae8"
       }
     }
   }
