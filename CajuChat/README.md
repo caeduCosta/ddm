@@ -36,7 +36,7 @@ O objetivo deste projeto é implementar funcionalidades específicas em um aplic
 2. Clonar este repositório:
 
    ```
-   git clone https://github.com/
+   git clone https://github.com/caeduCosta/ddm.git
    ```
 
 3. Instalar as dependências do projeto:
