@@ -3,9 +3,6 @@ import { View, TextInput, Button, Text, StyleSheet,Image } from 'react-native';
 import { auth } from '../../firebase'; // Importando a configuração do Firebase
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
-
-const whatsImage = require('../../assets/whats.webp');
-
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,8 +20,7 @@ const Login = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Image source={whatsImage} style={styles.image}/>
-      <Text style={{color:'white',fontSize:40,fontWeight:'bold'}}>WhatsApp</Text>
+      <Text style={{color:'white',fontSize:40,fontWeight:'bold'}}>CajuChat</Text>
       <TextInput
         placeholder="Email"
         value={email}
@@ -40,26 +36,24 @@ const Login = ({ navigation }) => {
       />
       {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
       <View style={styles.buttonContainer}>
-        <Button title="Entrar" onPress={handleLogin} color="#3fab4e" />
+        <Button title="Entrar" onPress={handleLogin} color="#ff4d4d" />
       </View>
       <View style={styles.buttonContainer}>
         <Button
           title="Criar Conta"
           onPress={() => navigation.navigate('Cadastro')}
-          color="#3fab4e"
+          color="#ff4d4d"
         />
       </View>
     </View>
   );
 };
 
-//bonitinho #42f563
-//feinho #3fab4e
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor:  '#42f563',
+    backgroundColor:  '#e57f6b',
     padding: 20,
   },
   input: {

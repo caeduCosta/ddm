@@ -4,8 +4,6 @@ import { auth, firestore } from '../../firebase'; // Importando a configuração
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 
-const whatsImage = require('../../assets/whats.webp');
-
 const Cadastro = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -36,8 +34,7 @@ const Cadastro = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Image source={whatsImage} style={styles.image} />
-      <Text style={{color: 'white', fontSize: 40, fontWeight: 'bold'}}>WhatsApp</Text>
+      <Text style={{color: 'white', fontSize: 40, fontWeight: 'bold'}}>CajuChat</Text>
       <TextInput 
         placeholder="Nome"
         value={name}
@@ -59,13 +56,13 @@ const Cadastro = ({ navigation }) => {
       />
       {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
       <View style={styles.buttonContainer}>
-        <Button title="Registrar" onPress={handleRegister} color="#3fab4e" />
+        <Button title="Registrar" onPress={handleRegister} color="#ff4d4d" />
       </View>
       <View style={styles.buttonContainer}>
         <Button
           title="Já tem uma conta? Entrar"
           onPress={() => navigation.navigate('Login')}
-          color="#3fab4e"
+          color="#ff4d4d"
         />
       </View>
     </View>
@@ -76,7 +73,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#42f563',
+    backgroundColor: '#e57f6b',
     padding: 20,
   },
   input: {

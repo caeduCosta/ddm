@@ -51,7 +51,7 @@ const Chats = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Usuários</Text>
+      <Text style={styles.title}>Mensagens</Text>
       {users.map(user => (
         <TouchableOpacity
           key={user.id}
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#42f563',
+    backgroundColor: '#ff8066',
     padding: 20,
   },
   title: {

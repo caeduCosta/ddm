@@ -6,14 +6,12 @@ import { getDatabase } from 'firebase/database';
 
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyCH66cFSKPBoGlb3HFj6ioDlQLAFEE1bro",
-  authDomain: "chat-firebase-b03e7.firebaseapp.com",
-  databaseURL: "https://chat-firebase-b03e7-default-rtdb.firebaseio.com/",
-  projectId: "chat-firebase-b03e7",
-  storageBucket: "chat-firebase-b03e7.firebasestorage.app",
-  messagingSenderId: "530119849526",
-  appId: "1:530119849526:web:f54d36e9c896013f808a97",
-  measurementId: "G-M23EEKCEGM"
+  apiKey: "AIzaSyAmRtt_xciWlYO7uHG6vkTmEVAzdOrjWa0",
+  authDomain: "cajuchat-ac6bd.firebaseapp.com",
+  projectId: "cajuchat-ac6bd",
+  storageBucket: "cajuchat-ac6bd.firebasestorage.app",
+  messagingSenderId: "470171931347",
+  appId: "1:470171931347:web:d88707593230809b21ba26"
 };
 
 // Inicializando o Firebase

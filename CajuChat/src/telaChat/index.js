@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#42f563',
+    backgroundColor: '#ff8066',
   },
   title: {
     fontSize: 24,
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   sendButton: {
-    backgroundColor: '#3fab4e',
+    backgroundColor: '#ff4d4d',
     padding: 12,
     borderRadius: 8,
     alignItems: 'center',
@@ -171,17 +171,6 @@ const Chat = ({ route }) => {
         onChangeText={handleTyping}
         placeholder="Digite uma mensagem"
       />
-
-      {/* Botão para exibir o seletor de emojis */}
-      <TouchableOpacity style={styles.emojiButton} onPress={() => setEmojiPickerVisible(!emojiPickerVisible)}>
-        <Text style={styles.emojiText}>😊</Text>
-      </TouchableOpacity>
-
-      {emojiPickerVisible && (
-        <EmojiSelector
-          onEmojiSelected={(emoji) => setNewMessage(newMessage + emoji)}
-        />
-      )}
 
       <TouchableOpacity style={styles.sendButton} onPress={sendMessage}>
         <Text style={styles.sendButtonText}>Enviar</Text>
