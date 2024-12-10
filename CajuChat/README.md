@@ -53,4 +53,4 @@ O objetivo deste projeto é implementar funcionalidades específicas em um aplic
 
 ## Testando o APK
 
-- Link para o [APK](). 
+- Link para o [APK](https://expo.dev/accounts/ana_olindin/projects/CajuChat/builds/3d5e4c80-26c0-4133-bc48-750c73855901). 
